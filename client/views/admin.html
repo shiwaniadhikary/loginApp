@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="loginApp">
+	<head>
+		<title>Admin Panel</title>
+	</head>
+	<body>
+		<div ng-controller="userController">
+			<h1>there are {{users.length}} records</h1>
+			<p>{{ users[0].firstName }}</p>
+			<p>{{ users[0].lastName }}</p>
+			<p>{{ users[0].username }}</p>
+			<p>{{ users[0].password }}</p>
+		</div>
+		
+		<script type="text/javascript" src="http://code.angularjs.org/1.3.9/angular.js"></script>
+		<script type="text/javascript" src="http://code.angularjs.org/1.3.9/angular-resource.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+		<script type="text/javascript" src="js/controllers/userController.js"></script>
+	</body>
+</html>
